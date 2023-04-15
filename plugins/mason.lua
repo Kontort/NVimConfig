@@ -5,7 +5,16 @@ return {
     "williamboman/mason-lspconfig.nvim",
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
-      -- ensure_installed = { "lua_ls" },
+      ensure_installed = {
+        "bashls",
+        "clangd",
+        "csharp_ls",
+        "cmake",
+        "jdtls",
+        "lua_ls",
+        "pyright",
+        "rust_analyzer",
+      },
     },
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -13,7 +22,21 @@ return {
     "jay-babu/mason-null-ls.nvim",
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
-      -- ensure_installed = { "prettier", "stylua" },
+      ensure_installed = {
+        "shfmt",
+        "clang-format",
+        -- "csharpier",
+        "gersemi",
+        -- "google-java-format",
+        "stylua",
+        "black",
+        "rustfmt",
+        "shellcheck",
+        "cpplint",
+        "semgrep",
+        "cmakelint",
+        "selene",
+      },
     },
   },
   {
