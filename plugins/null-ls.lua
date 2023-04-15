@@ -12,7 +12,6 @@ return {
       -- TODO: add options to shfmt
       null_ls.builtins.formatting.shfmt,
       null_ls.builtins.formatting.clang_format.with {
-        -- FIXME: why does it set offset and length in the source args?
         extra_args = {
           "--style",
           "{ColumnLimit: 120, IndentWidth: 4, TabWidth: 4}",
